@@ -41,10 +41,10 @@ const Board = ({ xIsNext, squares, onPlay, status }: BoardProps) => {
 
   return (
 <VStack spacing={4}>
-  <Box borderWidth="2px" borderStyle="solid" borderColor="grey.500" borderRadius={25} p={4} mb={4}>
+  <Box borderWidth="2px" borderStyle="solid" borderColor="teal.500" borderRadius={25} p={4} mb={4}>
     <Text fontSize="lg">{status}</Text>
   </Box>
-  <Box borderWidth="2px" borderStyle="solid" borderColor="grey.500" borderRadius={25} p={4}>
+  <Box borderWidth="2px" borderStyle="solid" borderColor="teal.500" borderRadius={25} p={4}>
     {[0, 3, 6].map((row) => (
       <Box key={row} display="flex">
         <Square value={squares[row]} onSquareClick={() => handleClick(row)} />
@@ -89,7 +89,7 @@ const TicTacToe = () => {
   return (
     <VStack spacing={8} mt={8}>
       <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} status={status} />
-      <Button onClick={handleReset} colorScheme="green" size="lg">
+      <Button onClick={handleReset} colorScheme="teal" size="lg">
         Rejouer
       </Button>
     </VStack>
