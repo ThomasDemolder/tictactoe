@@ -2,6 +2,7 @@
 import './App.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import ProfileCard from './compenents/card/profilecard/profilecard'
+import Tictactoe from './compenents/game/tictactoe'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <ChakraProvider>
     <div>
       <ProfileCard />
+      <Tictactoe />
     </div>
     </ChakraProvider>
   )
